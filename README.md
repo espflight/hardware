@@ -1,47 +1,51 @@
-ESPFlight Hardware Reference
+<div align="center">
 
-Open hardware reference design for ESPFlight-compatible drones.
+# ESPFlight Hardware Reference
 
-ESPFlight Hardware Reference provides a practical starting point for makers, developers, students, and independent hardware builders who want to design and build small drones based on ESP microcontrollers and the ESPFlight platform.
+**Open hardware reference design for ESP-based drones**
 
-ESPFlight is a platform, not a hardware manufacturer.
-ESPFlight does not produce or sell an official ESPFlight-branded drone, flight controller, or hardware kit. This repository exists as an open reference that others can study, modify, manufacture, and build upon.
+**Learn. Build. Modify. Create your own.**
 
-About the Hardware Reference
+[Website](https://espflight.com) · [Firmware](https://github.com/espflight/firmware) · Documentation
 
-The ESPFlight Hardware Reference is intended to demonstrate one practical implementation of ESPFlight-compatible hardware.
+</div>
 
-It is not the only supported design.
+ESPFlight Hardware Reference provides an open and practical starting point for building and developing ESP-based drone hardware.
 
-Makers and companies are encouraged to:
+It is designed for enthusiasts, students, educators, Makers, developers, and engineers who want to study a working design, build it, modify it, experiment with different configurations, or use it as the foundation for their own hardware.
 
-Modify the PCB
+ESPFlight is an open platform, not a commercial drone kit brand. Hardware published by ESPFlight is provided as a reference design rather than as a required official product.
 
-Change the board shape or layout
+## About the Hardware Reference
 
-Adapt the design for different frames
+The ESPFlight Hardware Reference demonstrates one practical implementation of hardware compatible with the ESPFlight platform.
 
-Use different compatible components
+It is a starting point, not a restriction on how ESPFlight-compatible hardware must be designed.
 
-Create their own ESPFlight-compatible boards
+You can:
 
-Build educational kits or independent products based on the platform
+* Study the schematic and PCB design
+* Build the reference hardware
+* Modify the PCB layout
+* Change the board shape or dimensions
+* Adapt the design for different frames
+* Use different compatible components
+* Develop your own ESPFlight-compatible boards
+* Create educational kits and independent products
+* Use the design as a foundation for further experimentation and development
 
-The goal is to provide a reusable hardware foundation rather than create a closed hardware ecosystem.
+Hardware derived from ESPFlight may use its own independent name and branding.
 
-ESPFlight Platform
+## ESPFlight Platform
 
-ESPFlight consists of several independent parts:
+ESPFlight brings together:
 
-Firmware — open-source flight controller firmware
+* **Firmware** — open-source flight-control firmware
+* **Hardware Reference** — open hardware designs
+* **ESPFlight Application** — configuration and control application
+* **Documentation** — build, setup, validation, and usage guides
 
-Hardware Reference — open hardware design
-
-ESPFlight Application — free control application
-
-Documentation — build, setup, and usage guides
-
-Firmware repository:
+Firmware:
 
 https://github.com/espflight/firmware
 
@@ -49,224 +53,191 @@ Website:
 
 https://espflight.com
 
-EasyEDA Project
+## EasyEDA Project
 
-The editable ESPFlight Hardware Reference is maintained in EasyEDA.
+The editable Hardware Reference is maintained in EasyEDA.
 
-EasyEDA project:
+**EasyEDA project:**
 
-ADD_EASYEDA_PROJECT_LINK_HERE
+`ADD_EASYEDA_PROJECT_LINK_HERE`
 
-The EasyEDA project should be considered the primary editable hardware design source.
+The EasyEDA project should be considered the primary editable source for the hardware design.
 
-You can open the project, copy it to your own workspace, modify it, and create your own compatible hardware implementation.
+You can copy the project into your own EasyEDA workspace, inspect it, modify it, and develop your own compatible hardware implementation.
 
-Repository Structure
+## Repository Structure
 
-The repository may contain the following resources:
+The repository may contain resources such as:
 
+```text
 hardware/
 ├── README.md
 ├── LICENSE
+├── NOTICE.md
 ├── design/
-│   └── EasyEDA project files / exports
+│   └── EasyEDA project files and exports
 ├── schematic/
 │   └── schematic exports
 ├── gerber/
-│   └── PCB manufacturing files
+│   └── PCB fabrication files
 ├── bom/
 │   └── bill of materials
 └── images/
     └── board and reference images
+```
 
-Not every folder is required for every hardware revision.
+The exact files may vary between hardware revisions.
 
-Building Your Own Hardware
+## Building the Reference Hardware
 
 A typical workflow is:
 
-Open the reference design in EasyEDA.
+1. Open the Hardware Reference in EasyEDA.
+2. Review the schematic and PCB layout.
+3. Copy the project into your own EasyEDA workspace if you want to modify it.
+4. Review the BOM and component availability.
+5. Verify the PCB revision and fabrication files.
+6. Order the PCB and required components.
+7. Assemble the hardware.
+8. Inspect the completed board before applying power.
+9. Flash compatible ESPFlight Firmware.
+10. Perform hardware and firmware validation without propellers.
+11. Verify motors, IMU orientation, control directions, ARM / DISARM, and failsafe behavior.
+12. Proceed to controlled flight testing only after successful validation.
 
-Review the schematic and PCB layout.
+Always use the documentation that matches your hardware and firmware revision.
 
-Copy the project into your own EasyEDA workspace.
+## Compatibility
 
-Modify the design if required.
+A custom board does not need to look identical to the ESPFlight Hardware Reference to work with ESPFlight.
 
-Review the BOM and component availability.
+Compatibility depends on factors such as:
 
-Generate or use the provided Gerber files.
+* ESP microcontroller or module
+* Sensor support
+* Electrical connections
+* Motor outputs
+* Pin assignments
+* Power architecture
+* Firmware configuration
+* Communication requirements
 
-Order the PCB from a PCB manufacturer.
+Hardware changes may require corresponding firmware configuration or code changes.
 
-Assemble the components.
+The Hardware Reference should therefore be treated as a known working foundation that can be adapted and extended.
 
-Inspect the board carefully before applying power.
+## Independent Hardware and Products
 
-Flash the ESPFlight firmware.
+ESPFlight is designed to support independent hardware development.
 
-Test the system without propellers.
+Makers, developers, engineers, educators, teams, and other builders may create their own boards, kits, educational platforms, and products based on the Hardware Reference, subject to the applicable license.
 
-Verify motor direction, IMU orientation, controls, and failsafe behavior.
+Independent products should use their own product names and branding.
 
-Proceed to controlled flight testing.
+Using ESPFlight Firmware or deriving a design from the Hardware Reference does not make an independent product an official ESPFlight product.
 
-Always verify the latest documentation before building.
+Accurate descriptions such as:
 
-Compatibility
+* **Based on ESPFlight**
+* **Compatible with ESPFlight**
+* **Uses ESPFlight Firmware**
 
-A custom board does not need to look identical to the reference PCB to be ESPFlight-compatible.
+may be used in accordance with the ESPFlight Brand Policy.
 
-Compatibility depends on the electrical design, supported sensors, motor outputs, pin assignments, firmware configuration, and communication requirements.
+## Fabrication Files
 
-If you change hardware connections or components, corresponding firmware configuration changes may also be required.
+The repository may include fabrication resources such as Gerber files, schematic exports, and a BOM for convenience.
 
-The Hardware Reference should therefore be treated as a known starting point, not as a restriction on future designs.
+Before ordering a PCB:
 
-Independent Hardware and Products
+* Confirm the hardware revision
+* Review board dimensions
+* Verify the PCB layer configuration
+* Check footprints and component values
+* Confirm component availability
+* Review the fabrication requirements of your PCB service
+* Verify that the Gerber files match the intended revision
 
-Independent makers, teams, educators, and companies may create their own hardware based on ESPFlight.
+If you modify the design, generate and verify your own fabrication files before ordering.
 
-Compatible products do not become official ESPFlight products simply because they use ESPFlight firmware or follow the Hardware Reference.
-
-Third-party hardware should use its own product name and branding and clearly describe its relationship to ESPFlight.
-
-This separation is intentional: ESPFlight is designed to remain an open platform that multiple independent hardware projects can build upon.
-
-Safety
+## Safety
 
 Drone hardware can cause injury or property damage if assembled, configured, or operated incorrectly.
 
-Before powered flight:
+Before applying power or attempting flight:
 
-Inspect all solder joints
+* Inspect solder joints and assembly
+* Check for electrical shorts
+* Verify supply voltage and polarity
+* Verify motor connections
+* Verify motor direction
+* Verify propeller direction
+* Verify IMU orientation
+* Verify control directions
+* Verify ARM / DISARM behavior
+* Verify communication failsafe behavior
+* Perform initial testing without propellers where appropriate
+* Keep people, animals, and property clear during testing
 
-Check for shorts
+You are responsible for validating hardware that you build, modify, or operate.
 
-Verify supply voltage and polarity
+Follow applicable safety requirements and local regulations.
 
-Verify motor connections
+## Contributions
 
-Verify motor direction
-
-Verify propeller direction
-
-Verify IMU orientation
-
-Verify control directions
-
-Verify ARM / DISARM behavior
-
-Verify communication failsafe
-
-Test without propellers first
-
-Keep people, animals, and property clear during testing
-
-Use appropriate protective equipment and follow applicable local laws and regulations.
-
-ESPFlight hardware designs are provided without warranty. You are responsible for validating any hardware you manufacture or operate.
-
-Manufacturing
-
-The Hardware Reference may include manufacturing files such as Gerbers and a BOM for convenience.
-
-Before ordering boards:
-
-Review the latest revision
-
-Verify board dimensions
-
-Verify layer configuration
-
-Check component footprints
-
-Confirm component availability
-
-Review manufacturer design-rule requirements
-
-If you modify the reference design, regenerate and verify your own manufacturing files.
-
-Contributions
-
-Hardware improvements and technical feedback are welcome.
+Technical feedback and improvements are welcome.
 
 Useful contributions may include:
 
-Schematic corrections
+* Schematic corrections
+* PCB layout improvements
+* Component substitutions
+* BOM updates
+* Fabrication notes
+* Assembly documentation
+* Validation results
+* Tested hardware variants
 
-PCB layout improvements
+Substantially different hardware designs should be clearly identified as independent ESPFlight-compatible implementations.
 
-New compatible board designs
+## Reporting Hardware Issues
 
-Component substitutions
+When reporting a hardware-related issue, include relevant information whenever possible:
 
-BOM improvements
+* Hardware revision
+* ESP module or microcontroller
+* Sensor configuration
+* Power source
+* Motor configuration
+* Firmware version
+* Description of the issue
+* Steps to reproduce
+* Measurements or images when useful
 
-Manufacturing notes
+Clear technical information makes hardware issues significantly easier to investigate.
 
-Assembly documentation
+## License
 
-Tested hardware variants
-
-For substantial new hardware designs, consider clearly identifying the design as an independent ESPFlight-compatible implementation.
-
-Reporting Hardware Issues
-
-When reporting a hardware issue, include as much relevant information as possible:
-
-Board revision
-
-ESP module used
-
-Sensor configuration
-
-Power source
-
-Motor / ESC configuration
-
-Firmware version
-
-Clear description of the problem
-
-Steps to reproduce
-
-Photos or measurements when useful
-
-License
-
-The hardware files in this repository are distributed under the license included in the repository.
-
-See:
-
-LICENSE
-
-for the complete terms.
-
-Different software components of the ESPFlight platform may use separate licenses. Always check the license included with each repository or component.
-
-ESPFlight Philosophy
-
-ESPFlight exists to make ESP-based flight experimentation easier to access, understand, modify, and extend.
-
-The Hardware Reference is intentionally open-ended.
-
-It provides a working foundation while leaving room for makers and independent companies to create different boards, frames, kits, educational platforms, and products around the same ecosystem.
-
-Build it. Modify it. Learn from it. Make it your own.
-
-ESPFlight
-
-Open platform for building ESP-based drones.
-
-https://espflight.com
-
-### License
-
-The ESPFlight Hardware Reference is open hardware licensed under the CERN Open Hardware Licence Version 2 — Permissive (CERN-OHL-P-2.0).
+The ESPFlight Hardware Reference is open hardware licensed under the **CERN Open Hardware Licence Version 2 — Permissive (CERN-OHL-P-2.0)**.
 
 You may study, modify, build, distribute, and develop independent projects and products based on the Hardware Reference subject to the terms of the license.
 
-The ESPFlight name and logo are not included in the open hardware license.
+The ESPFlight name, logo, visual identity, and other brand assets are not included in the open hardware license.
 
-See `LICENSE` and `NOTICE.md` for details.
+See [`LICENSE`](LICENSE) for the complete hardware license terms and [`NOTICE.md`](NOTICE.md) for additional information.
+
+## Philosophy
+
+ESPFlight provides a foundation that can be understood, modified, extended, and turned into something new.
+
+**Learn it. Build it. Change it. Create your own.**
+
+---
+
+<div align="center">
+
+**ESPFlight Hardware Reference**
+
+https://espflight.com
+
+</div>
