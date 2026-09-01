@@ -260,3 +260,13 @@ ESPFlight
 Open platform for building ESP-based drones.
 
 https://espflight.com
+
+### License
+
+The ESPFlight Hardware Reference is open hardware licensed under the CERN Open Hardware Licence Version 2 — Permissive (CERN-OHL-P-2.0).
+
+You may study, modify, build, distribute, and develop independent projects and products based on the Hardware Reference subject to the terms of the license.
+
+The ESPFlight name and logo are not included in the open hardware license.
+
+See `LICENSE` and `NOTICE.md` for details.
