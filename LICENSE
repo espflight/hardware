@@ -1,0 +1,16 @@
+CERN Open Hardware Licence Version 2 - Permissive
+
+SPDX-License-Identifier: CERN-OHL-P-2.0
+
+The ESPFlight Hardware Reference is licensed under the CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0).
+
+The definitive, unmodified licence text is published by CERN / the Open Hardware Repository at:
+https://ohwr.org/cern_ohl_p_v2.txt
+
+CERN's official licence information page:
+https://cern-ohl.web.cern.ch/
+
+This repository applies CERN-OHL-P-2.0 to the covered ESPFlight Hardware Reference design files and fabrication resources unless a file is explicitly marked otherwise.
+
+The ESPFlight name, logo, visual identity, and other brand assets are not licensed under CERN-OHL-P-2.0 and are governed separately by the ESPFlight Brand Policy:
+https://espflight.com/brand-policy/

@@ -1,15 +1,25 @@
-# ESPFlight Hardware Reference — Notice
+# ESPFlight Hardware Reference — License Notice
 
-The ESPFlight Hardware Reference is licensed under the CERN Open Hardware Licence Version 2 — Permissive (CERN-OHL-P-2.0).
+Copyright (c) 2026 ESPFlight
 
-You may study, use, modify, build, distribute, and create products based on the Hardware Reference subject to the terms of the applicable license.
+The ESPFlight Hardware Reference design files are made available under the **CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)**.
 
-## ESPFlight Brand
+You may study, use, make, modify, and distribute hardware based on the covered design files subject to the terms of CERN-OHL-P-2.0.
 
-The ESPFlight name, logo, and other ESPFlight brand assets are not licensed under CERN-OHL-P-2.0.
+## Modified designs
 
-You may create independent hardware, kits, and products based on the ESPFlight Hardware Reference, but they must use their own independent branding and must not be presented as official ESPFlight products or as being endorsed by ESPFlight.
+If you distribute modified ESPFlight Hardware Reference source files, clearly identify that the files were modified and include the date and a brief description of the changes as required by the applicable license.
 
-Factual statements such as “Based on ESPFlight” or “Compatible with ESPFlight” may be used in accordance with the ESPFlight Brand Policy.
+## Products made from the design
 
-See `LICENSE` for the hardware license and `BRAND_POLICY.md` for brand usage rules.
+Products made from the covered design must provide recipients access to applicable notices as required by CERN-OHL-P-2.0.
+
+## ESPFlight brand
+
+The hardware license does **not** grant rights to the ESPFlight name, logo, visual identity, or other brand assets.
+
+Independent commercial products, kits, or modified derivative hardware must use their own independent branding and must not present themselves as official, certified, approved, sponsored, or endorsed ESPFlight products unless separate permission has been granted.
+
+Accurate factual references to compatibility or technical origin may be made in accordance with the ESPFlight Brand Policy:
+
+https://espflight.com/brand-policy/

@@ -1,0 +1,12 @@
+ESPFlight Hardware Reference v1.0 is an open hardware reference design for learning, building, experimenting with, and developing ESP-based drones.
+
+The project provides a practical starting point that can be studied, built, modified, and adapted for independent projects and compatible hardware designs.
+
+ESPFlight is an open platform, not a required official hardware kit. Builders may use the reference design as a foundation for their own boards, educational projects, prototypes, kits, and independently branded products subject to the applicable license.
+
+License: CERN Open Hardware Licence Version 2 — Permissive (CERN-OHL-P-2.0).
+
+The ESPFlight name, logo, visual identity, and other brand assets are not included in the open hardware license. Independent products must use their own branding and must not imply official endorsement by ESPFlight.
+
+Firmware: https://github.com/espflight/firmware
+Website: https://espflight.com
