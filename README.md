@@ -6,7 +6,7 @@
 
 **Learn it. Build it. Change it. Create your own.**
 
-[Website](https://espflight.com) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Brand Policy](https://espflight.com/brand-policy/)
+[Website](https://espflight.com) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Brand Policy](https://espflight.com/brand-policy/)
 
 **Hardware Reference v1.0**
 
@@ -28,11 +28,11 @@ This release contains the validated fabrication outputs for **ESPFlight Hardware
 - Assembly notes
 - Release notes and checksums
 
-The editable hardware source is maintained in EasyEDA. The direct public EasyEDA project URL will be published at:
+The editable hardware source is publicly available in EasyEDA:
 
-https://espflight.com/hardware/
+**[Open ESPFlight Hardware Reference v1.0 in EasyEDA](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb)**
 
-when the final public project URL is confirmed. Until then, use the validated v1.0 fabrication assets from the official GitHub Release.
+The official GitHub Release remains the validated v1.0 fabrication baseline for Gerber, BOM, and Pick-and-Place files.
 
 ## Fabrication Files
 
@@ -60,7 +60,7 @@ See [`docs/ASSEMBLY_NOTES.md`](docs/ASSEMBLY_NOTES.md) before ordering assembly.
 
 A typical workflow is:
 
-1. Open the current ESPFlight Hardware Reference in EasyEDA when the public project URL is available.
+1. Open the [ESPFlight Hardware Reference v1.0 EasyEDA project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb).
 2. Review the schematic and PCB revision.
 3. Use the provided Gerber package for PCB fabrication, or generate fresh fabrication files from your own modified design.
 4. Review the BOM and component availability.
