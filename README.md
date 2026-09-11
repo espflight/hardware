@@ -28,9 +28,11 @@ This release contains the validated fabrication outputs for **ESPFlight Hardware
 - Assembly notes
 - Release notes and checksums
 
-The editable hardware source is maintained in EasyEDA. The current public project link is published through:
+The editable hardware source is maintained in EasyEDA. The direct public EasyEDA project URL will be published at:
 
 https://espflight.com/hardware/
+
+when the final public project URL is confirmed. Until then, use the validated v1.0 fabrication assets from the official GitHub Release.
 
 ## Fabrication Files
 
@@ -58,7 +60,7 @@ See [`docs/ASSEMBLY_NOTES.md`](docs/ASSEMBLY_NOTES.md) before ordering assembly.
 
 A typical workflow is:
 
-1. Open the current ESPFlight Hardware Reference in EasyEDA.
+1. Open the current ESPFlight Hardware Reference in EasyEDA when the public project URL is available.
 2. Review the schematic and PCB revision.
 3. Use the provided Gerber package for PCB fabrication, or generate fresh fabrication files from your own modified design.
 4. Review the BOM and component availability.
