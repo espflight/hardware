@@ -6,7 +6,7 @@
 
 **Learn it. Build it. Change it. Create your own.**
 
-[Website](https://espflight.com) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Brand Policy](https://espflight.com/brand-policy/)
+[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Brand Policy](https://espflight.com/brand-policy/)
 
 **Hardware Reference v1.0**
 
@@ -17,6 +17,12 @@ ESPFlight Hardware Reference provides an open and practical starting point for b
 It is designed for enthusiasts, students, educators, Makers, developers, and engineers who want to study a working design, build it, modify it, experiment with different configurations, or use it as the foundation for their own hardware.
 
 ESPFlight is an open platform, not a commercial drone-kit brand. Hardware published by ESPFlight is provided as a reference design rather than as a required official product.
+
+## Start with ESPFlight v1.0
+
+For the shortest official path from hardware to first controlled flight, see:
+
+**[Build ESPFlight v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md)**
 
 ## Release v1.0
 
