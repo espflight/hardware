@@ -6,7 +6,7 @@
 
 **Learn it. Build it. Change it. Create your own.**
 
-[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Brand Policy](https://espflight.com/brand-policy/)
+[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Pinout](PINOUT.md) · [Release Policy](RELEASE_POLICY.md) · [Brand Policy](https://espflight.com/brand-policy/)
 
 **Hardware Reference v1.0**
 
@@ -26,7 +26,7 @@ For the shortest official path from hardware to first controlled flight, see:
 
 ## Release v1.0
 
-This release contains the validated fabrication outputs for **ESPFlight Hardware Reference v1.0**:
+The published v1.0 release contains the validated fabrication outputs for **ESPFlight Hardware Reference v1.0**:
 
 - Gerber fabrication package
 - Bill of Materials (BOM)
@@ -38,7 +38,9 @@ The editable hardware source is publicly available in EasyEDA:
 
 **[Open ESPFlight Hardware Reference v1.0 in EasyEDA](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb)**
 
-The official GitHub Release remains the validated v1.0 fabrication baseline for Gerber, BOM, and Pick-and-Place files.
+The official GitHub Release remains the immutable validated v1.0 fabrication baseline for Gerber, BOM, and Pick-and-Place files.
+
+The original v1.0 tag did not include a native editable EasyEDA project export inside the GitHub tree. Future hardware baselines must preserve a versioned editable design snapshot in GitHub in addition to the public EasyEDA project, as defined in [RELEASE_POLICY.md](RELEASE_POLICY.md).
 
 ## Fabrication Files
 
@@ -54,6 +56,14 @@ fabrication/
 
 The Gerber archive includes two copper layers, solder mask, silkscreen, paste layers, board outline, document layer, plated-through-hole drill data, and via drill data.
 
+## Pinout and firmware-facing interfaces
+
+The default v1.0 firmware-facing pin mapping is documented in:
+
+**[PINOUT.md](PINOUT.md)**
+
+Custom boards may use different mappings only when the electrical design and corresponding firmware configuration are changed and validated together.
+
 ## Manual / Module Components
 
 Some parts are installed as modules or off-board/manual components and are therefore not included in the SMD BOM used for automated assembly.
@@ -68,14 +78,15 @@ A typical workflow is:
 
 1. Open the [ESPFlight Hardware Reference v1.0 EasyEDA project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb).
 2. Review the schematic and PCB revision.
-3. Use the provided Gerber package for PCB fabrication, or generate fresh fabrication files from your own modified design.
-4. Review the BOM and component availability.
-5. Review the Pick-and-Place file if automated assembly will be used.
-6. Assemble the remaining manual/module components.
-7. Inspect the completed hardware before applying power.
-8. Flash compatible ESPFlight Firmware.
-9. Perform validation without propellers first.
-10. Verify motor direction, IMU orientation, controls, ARM / DISARM, and failsafe behavior before controlled flight testing.
+3. Review the [v1.0 pinout](PINOUT.md).
+4. Use the provided Gerber package for PCB fabrication, or generate fresh fabrication files from your own modified design.
+5. Review the BOM and component availability.
+6. Review the Pick-and-Place file if automated assembly will be used.
+7. Assemble the remaining manual/module components.
+8. Inspect the completed hardware before applying power.
+9. Flash compatible ESPFlight Firmware.
+10. Perform validation without propellers first.
+11. Verify motor direction, IMU orientation, controls, ARM / DISARM, and failsafe behavior before controlled flight testing.
 
 ## Compatibility
 
@@ -119,9 +130,7 @@ The ESPFlight Hardware Reference is licensed under the **CERN Open Hardware Lice
 
 See [`LICENSE`](LICENSE) and [`NOTICE.md`](NOTICE.md).
 
-The definitive, unmodified CERN-OHL-P-2.0 text is published by CERN/Open Hardware Repository:
-
-https://ohwr.org/cern_ohl_p_v2.txt
+The current `main` branch contains the complete unmodified CERN-OHL-P-2.0 text. The published v1.0 tag remains immutable; the packaging strategy for later baselines is documented in [RELEASE_POLICY.md](RELEASE_POLICY.md).
 
 The ESPFlight name, logo, visual identity, and other brand assets are not included in the open-hardware license and remain subject to the ESPFlight Brand Policy.
 
