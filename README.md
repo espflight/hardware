@@ -43,6 +43,15 @@ The official GitHub Release remains the immutable validated v1.0 fabrication bas
 
 The original published v1.0 tag did not contain a native editable EasyEDA export. A source snapshot exported from the official v1.0 EasyEDA project was added later to the current `main` branch without modifying the published tag. Future hardware baselines must include the corresponding versioned editable design source as part of the release baseline, as defined in [RELEASE_POLICY.md](RELEASE_POLICY.md).
 
+## Licensing source of truth
+
+The versioned ESPFlight licensing statement for this hardware is defined by the `LICENSE` and `NOTICE.md` files in this GitHub repository.
+
+The public OSHWLab project is provided as an online viewing/editing mirror and may display platform-generated reproduction or intellectual-property notices that are not project-specific. Those platform UI notices are not used as the ESPFlight release or licensing source of truth.
+
+ESPFlight Hardware Reference is released under **CERN-OHL-P-2.0**. Commercial use, including independently branded boards, kits, and products, is permitted subject to the license terms and the separate ESPFlight Brand Policy.
+
+
 ## Fabrication Files
 
 ```text

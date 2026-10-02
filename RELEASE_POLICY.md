@@ -41,7 +41,11 @@ fabrication/
 
 The editable snapshot must correspond to the same design revision used to generate the release fabrication outputs.
 
-The public EasyEDA project may remain the convenient online editing source, but the GitHub tag must also preserve a self-contained editable snapshot whenever the export format is available.
+The public EasyEDA / OSHWLab project may remain a convenient online viewing and editing mirror, but the GitHub repository, signed tag, and GitHub Release are the versioned source of truth for release provenance, licensing, and preserved release artifacts.
+
+External platform-generated notices or UI text must not be relied on as the ESPFlight project-specific license statement. The tagged `LICENSE` and `NOTICE.md` files define the ESPFlight licensing statement for each published hardware baseline.
+
+The GitHub tag must preserve a self-contained editable snapshot whenever the export format is available.
 
 ## Versioning
 

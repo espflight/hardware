@@ -14,6 +14,9 @@ The public online project remains available at:
 
 https://oshwlab.com/eng_karimizadeh/project_xfbshxkb
 
+For release provenance and project-specific licensing, this GitHub repository is authoritative. The OSHWLab page is an online viewing/editing mirror and may include platform-generated reproduction or intellectual-property notices. ESPFlight Hardware Reference remains licensed under CERN-OHL-P-2.0 as stated in the repository `LICENSE` and `NOTICE.md` files.
+
+
 ### Integrity
 
 SHA-256:
