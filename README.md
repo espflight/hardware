@@ -6,7 +6,7 @@
 
 **Learn it. Build it. Change it. Create your own.**
 
-[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Pinout](PINOUT.md) · [Release Policy](RELEASE_POLICY.md) · [Brand Policy](https://espflight.com/brand-policy/)
+[Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Editable Source](design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip) · [Pinout](PINOUT.md) · [Release Policy](RELEASE_POLICY.md) · [Brand Policy](https://espflight.com/brand-policy/)
 
 **Hardware Reference v1.0**
 
@@ -34,13 +34,14 @@ The published v1.0 release contains the validated fabrication outputs for **ESPF
 - Assembly notes
 - Release notes and checksums
 
-The editable hardware source is publicly available in EasyEDA:
+The editable hardware design is available in two forms on the current project baseline:
 
-**[Open ESPFlight Hardware Reference v1.0 in EasyEDA](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb)**
+- **[Download the EasyEDA source snapshot](design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip)**
+- **[Open the public EasyEDA project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb)**
 
 The official GitHub Release remains the immutable validated v1.0 fabrication baseline for Gerber, BOM, and Pick-and-Place files.
 
-The original v1.0 tag did not include a native editable EasyEDA project export inside the GitHub tree. Future hardware baselines must preserve a versioned editable design snapshot in GitHub in addition to the public EasyEDA project, as defined in [RELEASE_POLICY.md](RELEASE_POLICY.md).
+The original published v1.0 tag did not contain a native editable EasyEDA export. A source snapshot exported from the official v1.0 EasyEDA project was added later to the current `main` branch without modifying the published tag. Future hardware baselines must include the corresponding versioned editable design source as part of the release baseline, as defined in [RELEASE_POLICY.md](RELEASE_POLICY.md).
 
 ## Fabrication Files
 
@@ -52,9 +53,15 @@ fabrication/
 │   └── ESPFlight_Hardware_Reference_v1.0_BOM.csv
 └── pick-and-place/
     └── ESPFlight_Hardware_Reference_v1.0_PickAndPlace.csv
+
+design/
+├── ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip
+└── README.md
 ```
 
 The Gerber archive includes two copper layers, solder mask, silkscreen, paste layers, board outline, document layer, plated-through-hole drill data, and via drill data.
+
+The editable source ZIP contains the EasyEDA project export for the schematic and PCB. See [`design/README.md`](design/README.md) for source provenance and integrity information.
 
 ## Pinout and firmware-facing interfaces
 
@@ -76,7 +83,7 @@ See [`docs/ASSEMBLY_NOTES.md`](docs/ASSEMBLY_NOTES.md) before ordering assembly.
 
 A typical workflow is:
 
-1. Open the [ESPFlight Hardware Reference v1.0 EasyEDA project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb).
+1. Open the [ESPFlight Hardware Reference v1.0 EasyEDA project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) or download the [versioned EasyEDA source snapshot](design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip).
 2. Review the schematic and PCB revision.
 3. Review the [v1.0 pinout](PINOUT.md).
 4. Use the provided Gerber package for PCB fabrication, or generate fresh fabrication files from your own modified design.
