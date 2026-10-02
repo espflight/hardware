@@ -10,7 +10,6 @@ permissions:
 
 jobs:
   correct-r13-metadata:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-24.04
     timeout-minutes: 10
 
