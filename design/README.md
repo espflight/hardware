@@ -19,16 +19,31 @@ https://oshwlab.com/eng_karimizadeh/project_xfbshxkb
 SHA-256:
 
 ```text
-876164299499c7eddd6da02b3eaf02faebfa2f2027e284bb83c3caee09396821
+fc1595e9a2464167da13b810ad9e3be4733d2ce9372f3bd963535b6f2daee06d
 ```
 
 Git blob SHA:
 
 ```text
-b3708b0960879348ee7bdf14bb1cc9d795362e14
+2acc70177d810c5c6d73941623f96b7bee885439
 ```
 
 The Git blob SHA above matches the uploaded ZIP stored in this repository.
+
+### R13 metadata correction
+
+On 2026-10-02, the GitHub-hosted editable EasyEDA snapshot received a metadata-only correction for `R13`.
+
+The PCB geometry, routing, pads, vias, copper areas, schematic, and embedded project README were not changed. The correction updates the PCB component metadata to match the already-authoritative v1.0 BOM:
+
+- value: `1 kΩ`;
+- package: `R0805`;
+- manufacturer part: `0805W8F1001T5E`;
+- manufacturer: `UNI-ROYAL`;
+- LCSC part: `C17513`;
+- JLCPCB classification: `Basic Part`.
+
+The validated Gerber, BOM, and Pick-and-Place files in the official `v1.0` release remain unchanged and authoritative.
 
 ## Release provenance
 
