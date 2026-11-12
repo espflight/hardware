@@ -4,7 +4,7 @@
 
 **Open hardware reference design for ESP-based drones**
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
 
 [Website](https://espflight.com) · [Build v1.0](https://github.com/espflight/docs/blob/main/BUILD_V1.0.md) · [Firmware](https://github.com/espflight/firmware) · [Documentation](https://espflight.com/docs/) · [Application](https://github.com/espflight/application) · [EasyEDA Project](https://oshwlab.com/eng_karimizadeh/project_xfbshxkb) · [Editable Source](design/ESPFlight_Hardware_Reference_v1.0_EasyEDA_Source.zip) · [Pinout](PINOUT.md) · [Release Policy](RELEASE_POLICY.md) · [Brand Policy](https://espflight.com/brand-policy/)
 
@@ -154,7 +154,7 @@ The ESPFlight name, logo, visual identity, and other brand assets are not includ
 
 ESPFlight provides a foundation that can be understood, modified, extended, and turned into something new.
 
-**Learn it. Build it. Change it. Create your own.**
+**Learn. Build. Fly.**
 
 ---
 
